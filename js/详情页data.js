@@ -1,4 +1,5 @@
-var search = location.search;
+(function () {
+    var search = location.search;
 if (search) {
     search = search.replace(/^\?/, "");
     var arr = search.split("&")
@@ -8,8 +9,8 @@ if (search) {
         }
     }
     if (!isNaN(id)) {
-        $.get("../json/shop.json", function (data) {
-            console.log(data[id]);
+        console.log(id);
+        $.get("http://127.0.0.1:3000/commodity", function (data) {
             $("#top_name").text(data[id]["name"]);//头部名
             $("#shop_name").text(data[id]["name"]);//名字
             $(".sale-desc").text(data[id]["js"]);//介绍
@@ -39,12 +40,15 @@ if (search) {
                 str += ` <img src="../img/${data[id]["imgsrc"]}/xqimg/${data[id]["xqimg"][index]}" alt="">`;
             }
             $("#xq").html(str);//介绍图片
-
         });
     }
 
 } else {
-
     location.href="404.html"
-
 }
+
+})();
+
+
+
+
