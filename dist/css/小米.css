@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 取消列表符号 */
+ul,li{
+    list-style: none;
+}
+/* 取消下划线 */
+a{
+    text-decoration: none;
+}
+/* 取消加粗 */
+h1,h2,h3,h4,h5,h6,strong,b{
+    font-weight: normal;
+}
+/* 取消倾斜 */
+em,i{
+    font-style: normal;
+}
+/* 解决图片3px */
+img{
+    display: block;
+}
+/* 取消按钮边框 */
+input,button{
+    border: none;
+    background: none;
+}
+.clear:after{
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}/* 解决高度塌陷最完美的方法 */
+.clear{
+    zoom:1;
+}/*ie解决兼容问题 */
+
+nav{
+    margin: auto;
+    width: 1226px;
+    height: 40px;
+    background: #333;
+    color: #b0b0b0;
+    line-height: 40px;
+    font-size: 12px;
+    position: relative;
+   
+}
+nav a{
+    color: #b0b0b0;
+}
+nav a:hover{
+    color: #fff;
+}
+nav .shopcat{
+    right: 0;
+    top: 0;
+    position: absolute;
+    float: right;
+    height: 40px;
+    text-align: center;
+
+}
+nav  .right{
+    float: right;
+    margin-right:130px;
+}
+nav .shopcat span{
+    float: right;
+    background: #666;
+    width: 120px;
+    right: 0;
+
+}
+.nav_wrap{
+   background: #333333;
+}
+
+.shopcat div{
+    position: absolute;
+    width: 329px;
+    height: 0px;
+    background: #fff;
+    top: 40px;
+    right:0px;
+    border-top:none;
+    z-index: 10000;
+    box-shadow: 0px 2px 2px #666;
+    transition: all 1s;
+}
+.shopcat:hover div{
+    height: 99px;
+}
+header{
+    width: 1226px;
+    height: 100px;
+    margin: auto;
+    color: #333333;
+}
+
+.log{
+    width: 55px;
+    height: 55px;
+    margin-top: 22px;
+    float: left;
+    background: #ff6801;
+    position: relative;
+    overflow: hidden;
+}
+header .log .one{
+    position: absolute;
+    top: 4px;
+    left: -55px;
+    transition: all 0.1s;
+}
+header .log .two{
+   position: absolute;
+   top: 4px;
+   left: 1px;
+   transition: all 0.1s;
+}
+header .log:hover .one{
+    left: 1px;
+}
+header .log:hover .two{
+    left: 55px;
+}
+.log2{
+    float: left;
+    margin-top: 22px;
+    margin-left: 12px;
+}
+header a{
+    display: block;
+    float: left;
+    color:#333;
+    line-height: 1;
+    font-size: 16px;
+    padding:38px 10px 38px;
+}
+header a:hover{
+    color: #ff6801;
+}
+header form{
+    float: right;
+    margin-top: 22px;
+}
+.sou{
+    width: 245px;
+    height: 50px;
+    background: #fff;
+    border: #e0e0e0 1px solid;
+    padding: 0 10px;
+    outline: none;
+}
+header form button{
+    float: right;
+    width: 50px;
+    height: 52px;
+    border: #e0e0e0 1px solid;
+    outline: none;
+}
+.banner{
+    width: 1226px;
+    height: 460px;
+    position: relative;
+    margin: auto;
+}
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1226px;
+    height: 460px;
+}
+.banner>aside>ul>li>div{
+    position: absolute;
+    right:-992px;
+    top: 0;
+    background: #fff;
+    z-index: 100;
+    width: 992px;
+    height: 460px;
+}
+.banner .lunbo{
+    width: 1226px;
+    height: 460px;
+    overflow: hidden;
+}
+.banner aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 420px;
+    padding: 20px 0px;
+    width: 234px;
+    border: 0;
+    color: #fff;
+    background: rgba(105,101,101,.6);
+    z-index: 10;
+}
+.banner aside li{
+    background: url(../img/图层2.png) no-repeat 180px center;
+    line-height: 42px;
+    padding: 0px 0px 0px 30px;
+    width: 204px;
+}
+.banner aside li a{
+    color: #fff;
+}
+.banner aside li:hover{
+    background-color: #ff6801;
+}
+.mi_item{
+    width: 1226px;
+    margin: auto;
+    margin-top: 14px;
+}
+
+.mi_item img{
+    width: 316px;
+    height: 170px;
+    margin-left:14px;
+    float: left;
+}
+.mi_item div {
+    float: left;
+    background: rgba(105,101,101,.6);
+    font-size: 12px;
+    width: 228px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+}
+.mi_item div li{
+    width: 76px;
+    height: 82px;
+    float: left;
+    padding-top: 3px;
+    background: rgba(56, 37, 37, 0.6);
+    transition: all 1s;
+}
+.mi_item div li a{
+    display: block;
+    padding-top: 18px;
+    color: #e0e0e0;
+    transition: all 1s;
+}
+.mi_item div li img{
+    float: none;
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: auto;
+    margin-bottom: 4px;
+}
+.mi_item div li:hover a{
+    color: #fff;
+    
+}
+.mi_item div li:hover{
+    background: rgba(56, 37, 37, 0.5);
+}
+.body_warp{
+    background-color: #e0e0e0;
+}
+.body{
+    margin: auto;
+    margin-top: 38px;
+    background-color: #e0e0e0;
+    width: 1226px;
+  padding-top: 4px;
+  padding-bottom: 30px;
+}
+.body .shangou a{
+    width: 234px;
+    display: block;
+    padding-top: 39px;
+    border-top:1px solid #0f0 ;
+    float: left;
+    text-align: center;
+    padding-bottom: 49px;
+}
+.body_title{
+    line-height: 58px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #333;
+}
+.body .shangou a h3{
+    padding-top: 15px;
+
+    color: #ef3a3b;
+}
+.body .shangou a h4{
+    color: rgba(0,0,0,.54);
+    font-size: 15px;
+}
+.body .shangou a img{
+    margin: 25px auto;
+    max-width: 160px;
+    _width: 160px;
+}
+.body .shangou a dl{
+    margin: auto;
+    margin-top: 30px;
+
+    width: max-content;
+}
+.body .shangou a dt{
+    float: left;
+    width: 46px;
+    height: 46px;
+    background: #605751;
+    color: #fff;
+    font-size: 24px;
+    line-height: 46px;
+}
+.body .shangou a dd{
+    float: left;
+    width: 15px;
+    height: 46px;
+    line-height: 46px;
+    color: #605751;
+    font-size: 28px;
+    font-style: normal;
+}
+.juse{
+    background: #f1edec;
+}
+.baise{
+    background: #fff;
+}
+.body ul{
+    float: left;
+}
+.body li{
+    margin-right: 14px;
+    float: left;
+}
+.shangou .clear .baise .item{
+    margin:  0px auto;
+}
+.shangou h5{
+    margin: 0;
+    color: #ff6709;
+    margin-bottom: 9px;
+}
+.shangou h5 del{
+    color: #666;
+}
+.shangou p{
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.shangou h6{
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #212121;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.clear .end{
+    margin-right:0 ;
+}
+footer a{
+    color: #e0e0e0;
+}

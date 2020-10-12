@@ -1,0 +1,195 @@
+body {
+    background: #f5f5f5;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+        url('iconfont.woff2') format('woff2'),
+        url('iconfont.woff') format('woff'),
+        url('iconfont.ttf') format('truetype'),
+        url('iconfont.svg#iconfont') format('svg');
+  }
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+.header_wrap {
+    height: 100px;
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+}
+
+.header_wrap header {
+    margin: auto;
+    height: 100px;
+    width: 1226px;
+}
+
+.header_wrap header h1 {
+    float: left;
+    line-height: 48px;
+    margin-bottom: 0;
+    font-size: 28px;
+    margin-top: 26px;
+}
+
+.header_wrap header h1 span {
+    margin-left: 50px;
+}
+
+.logo {
+    float: left;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    background: #ff6700;
+    position: relative;
+}
+
+.logo:before {
+    pointer-events: none;
+    background: url(../img/mi-logo.png) no-repeat 50% 50%;
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    content: "";
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.logo:after {
+    pointer-events: none;
+    position: absolute;
+    background: url(../img/mi-home.png) no-repeat 50% 50%;
+    opacity: 0;
+    content: "";
+    left: -55px;
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+
+.logo:hover::before {
+    left: 55px;
+    opacity: 0;
+}
+
+.logo:hover:after {
+    left: 0px;
+    top: 0;
+    opacity: 1;
+}
+
+
+.header_wrap header p {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 50px;
+    margin-left: 15px;
+    color: #757575;
+}
+
+.header_wrap header .fr {
+    float: right;
+}
+
+.car {
+    line-height: 70px;
+    width: 1226px;
+    padding: 38px 0;
+    margin: auto;
+}
+
+.car_header {
+    background: #fff;
+    color: #424242;
+    font-size: 14px;
+}
+
+.car-check {
+    width: 110px;
+    position: relative;
+}
+
+.car-check i{
+    display: inline-block;
+    cursor:pointer;
+    line-height: 20px;
+    color: #fff;
+    margin-left: 25px;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+.car-check i:hover{
+    color: #757575;
+}
+
+.car-img {
+    width: 120px;
+}
+
+.car-name {
+    width: 380px;
+    font-size: 18px;
+}
+
+.car-price {
+    width: 158px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.car-num {
+    width: 150px;
+    text-align: center;
+}
+
+.car-total {
+    width: 120px;
+    padding-right: 83px;
+    text-align: right;
+    font-size: 16px;
+}
+
+.car-action {
+    width: 80px;
+    text-align: center;
+}
+
+.car_itme {
+    background: #fff;
+    padding: 15px 25px 15px 0;
+    margin-top: 2px;
+}
+
+.car_footer {
+    line-height: 50px;
+    margin-top: 50px;
+    background: #fff;
+}
+.orange{
+    color: #ff6700;
+}
+.bgorange{
+    background: #ff6700;
+}

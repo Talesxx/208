@@ -1,0 +1,33 @@
+section {
+  width: 1226px;
+  margin: auto; }
+  section h2 {
+    font-size: 18px;
+    color: #ff6700;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 60px; }
+
+.phone {
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0; }
+  .phone li {
+    width: 244px;
+    height: 136px;
+    padding-top: 24px;
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+    list-style: none;
+    display: inline-block; }
+    .phone li img {
+      display: block;
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 24px; }
+    .phone li p {
+      display: block;
+      max-height: 20px;
+      overflow: hidden;
+      color: #757575;
+      font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif; }

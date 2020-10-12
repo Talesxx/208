@@ -1,0 +1,53 @@
+body,ul,li,dl,dt,dd,p,ol,h1,h2,h3,h4,h5,h6,form,img,table,fieldset,legend,figure,figcaption{margin:0; padding:0;}
+body{ font-family:"微软雅黑";font-size:12px;}
+/* 取消列表符号 */
+ul,li,ol{
+    list-style: none;
+}
+/* 取消下划线 */
+a{
+    text-decoration: none;
+    color:#333;
+}
+/* 取消加粗 */
+h1,h2,h3,h4,h5,h6,strong,b{
+    font-weight: normal;
+}
+/* 取消倾斜 */
+em,i{
+    font-style: normal;
+}
+/* 解决图片3px */
+img{
+    display: block;
+}
+/* 取消按钮边框 */
+input,button{
+    border: 0;
+    background: none;
+}
+img,fieldset{ border:0; }
+input,a{outline:none;}
+
+/* 解决高度塌陷 */
+.clear:after{
+    content: '.';
+    clear:both;
+    display: block;
+    height: 0;
+    /* 内容溢出裁剪 */
+    overflow: hidden;
+    /* after伪元素隐藏 */
+    visibility: hidden;
+}
+/* 兼容 */
+.clear{
+    zoom:1;
+}
+
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}

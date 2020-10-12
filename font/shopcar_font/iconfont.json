@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "16995",
+      "name": "mi logo",
+      "font_class": "milogo",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "1062468",
+      "name": "减",
+      "font_class": "jian-copy",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "3751565",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "3915815",
+      "name": "对",
+      "font_class": "dui",
+      "unicode": "e7fa",
+      "unicode_decimal": 59386
+    },
+    {
+      "icon_id": "5492931",
+      "name": "叉",
+      "font_class": "cha",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "10237354",
+      "name": "首页-选中",
+      "font_class": "index",
+      "unicode": "e509",
+      "unicode_decimal": 58633
+    }
+  ]
+}

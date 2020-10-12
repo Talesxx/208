@@ -1,0 +1,126 @@
+
+nav{
+    margin: auto;
+    width: 1226px;
+    height: 40px;
+    background: #333;
+    color: #b0b0b0;
+    line-height: 40px;
+    font-size: 12px;
+    position: relative;
+   
+}
+nav a{
+    color: #b0b0b0;
+}
+nav a:hover{
+    color: #fff;
+}
+nav .shopcat{
+    right: 0;
+    top: 0;
+    position: absolute;
+    float: right;
+    height: 40px;
+    text-align: center;
+
+}
+nav  .right{
+    float: right;
+    margin-right:130px;
+}
+nav .shopcat span{
+    float: right;
+    background: #666;
+    width: 120px;
+    right: 0;
+
+}
+.nav_wrap{
+   background: #333333;
+}
+
+.shopcat div{
+    position: absolute;
+    width: 329px;
+    height: 0px;
+    background: #fff;
+    top: 40px;
+    right:0px;
+    border-top:none;
+    z-index: 10000;
+    box-shadow: 0px 2px 2px #666;
+    transition: all 1s;
+}
+.shopcat:hover div{
+    height: 99px;
+}
+header{
+    width: 1226px;
+    height: 100px;
+    margin: auto;
+    color: #333333;
+}
+
+.log{
+    width: 55px;
+    height: 55px;
+    margin-top: 22px;
+    float: left;
+    background: #ff6801;
+    position: relative;
+    overflow: hidden;
+}
+header .log .one{
+    position: absolute;
+    top: 4px;
+    left: -55px;
+    transition: all 0.1s;
+}
+header .log .two{
+   position: absolute;
+   top: 4px;
+   left: 1px;
+   transition: all 0.1s;
+}
+header .log:hover .one{
+    left: 1px;
+}
+header .log:hover .two{
+    left: 55px;
+}
+.log2{
+    float: left;
+    margin-top: 22px;
+    margin-left: 12px;
+}
+header a{
+    display: block;
+    float: left;
+    color:#333;
+    line-height: 1;
+    font-size: 16px;
+    padding:38px 10px 38px;
+}
+header a:hover{
+    color: #ff6801;
+}
+header form{
+    float: right;
+    margin-top: 22px;
+}
+.sou{
+    width: 245px;
+    height: 50px;
+    background: #fff;
+    border: #e0e0e0 1px solid;
+    padding: 0 10px;
+    outline: none;
+}
+header form button{
+    float: right;
+    width: 50px;
+    height: 52px;
+    border: #e0e0e0 1px solid;
+    outline: none;
+}

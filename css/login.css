@@ -1,0 +1,46 @@
+
+header{
+    width: 1130px;
+    margin: auto;
+    margin-top: -2.5%;
+}
+
+.content{
+    min-width: 1130px;
+    _width:1130px;
+    position: relative;
+    height: 588px;
+    background: url(../img/login_bg.jpg) center center ;
+    margin-bottom: 20px;
+}
+.content h1{
+    margin: 20px 0 20px 0;
+}
+section{
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    width: 410px;
+}
+.content p{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.logo_img {
+    margin-top: 180px;
+    text-align: center;
+}
+#password,#user{
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(186,186,186,.3);
+    margin-bottom: 14px;
+    text-indent: 1em;
+}
+.origin{
+    color: #ff6801;
+}
+.red{
+    color: red;
+}

@@ -1,0 +1,265 @@
+body {
+    font-family: 微软雅黑;
+}
+
+.container_wrap {
+    border-top: solid 1px #e0e0e0;
+    border-bottom: solid 1px #e0e0e0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .07);
+}
+
+.container {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 60px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.price_sm {
+    background: #f5f5f5;
+    padding-bottom: 50px;
+}
+
+.title_price {
+    width: 1226px;
+    margin: auto;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1em 0;
+}
+
+.price_sm img {
+    width: 1226px;
+    margin: auto;
+}
+
+a:hover {
+    color: #ff6801;
+}
+
+.commodity {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 12px;
+    min-height: 560px;
+    _height: 560px;
+    width: 1226px;
+    margin: auto;
+}
+
+.lunbo {
+    position: relative;
+    width: 560px;
+}
+
+.lunbo_img {
+    position: relative;
+    width: 560px;
+    height: 560px;
+}
+
+.lunbo_img img {
+    position: absolute;
+    width: 560px;
+    height: 560px;
+    top: 0;
+    left: 0;
+}
+
+.commodity_body {
+    width: 600px;
+}
+
+.lunbo_index {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+
+.lf_btn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    height: 69px;
+    margin: auto;
+    background: url(../img/icon-slides.png) no-repeat -84px center;
+}
+
+.lf_btn:hover {
+    background-position: -0px center;
+}
+
+.rg_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    height: 69px;
+    margin: auto;
+    float: left;
+    background: url(../img/icon-slides.png) no-repeat -125px center;
+}
+
+.rg_btn:hover {
+    background-position: -42px center;
+}
+
+.activation_lunbo_index {
+    background: #a3a3a3;
+}
+
+.lunbo_index li {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    margin: 10px;
+    background: #ccc;
+    cursor: pointer;
+}
+
+.commodity_body h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 400;
+    color: #212121;
+}
+
+.commodity_body .sale-desc {
+    color: #b0b0b0;
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.commodity_body .company-info {
+    color: #ff6700;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.commodity_body p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.commodity_body .price-info {
+    font-size: 18px;
+    line-height: 1;
+    color: #ff6700;
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    color: #ff6700;
+    padding: 12px 0 10px;
+}
+
+.commodity_body .line {
+    margin-top: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.commodity_body h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.btn_select {
+    text-align: center;
+    display: inline-block;
+    width: 290px;
+    line-height: 42px;
+    border: #b0b0b0 1px solid;
+    margin-right: 6px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #b0b0b0;
+    cursor: pointer;
+}
+
+.btn_select:hover {
+    color: #ff6700;
+    border-color: #ff6700;
+}
+.btn_anxia{
+    color: #ff6700;
+    border-color: #ff6700;
+}
+
+.selected-list {
+    margin-top: 20px;
+    background: #f9f9fa;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.selected-list ul li {
+    list-style: none;
+    line-height: 30px;
+    color: #616161;
+    font-size: 14px;
+}
+.selected-list  .total-price{
+    color: #ff6700;
+    font-size: 24px;
+    padding-top: 20px;
+}
+.btn-box .btn-primary{
+    display: inline-block;
+    text-align: center;
+    width: 298px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 16px;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+    cursor: pointer;
+    transition: all 1s;
+}
+.btn-box .btn-primary:hover{
+    background: #f25807;
+    border-color: #ff6700;
+}
+.after-sale-info{
+    padding: 10px 0;
+}
+.after-sale-info span{
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    cursor: default;
+    white-space: nowrap;
+    color: #b0b0b0;
+}
+.after-sale-info span em{
+    font-style: normal;
+    display: inline-block;
+    margin-left: 2px;
+    vertical-align: middle;
+    line-height: 30px;
+    font-size: 14px;
+}

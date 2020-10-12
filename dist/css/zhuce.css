@@ -1,0 +1,139 @@
+section{
+    position: relative;
+    background: #fff;
+    margin: auto;
+    width: 854px;
+    padding-bottom: 30px;
+    font-size: 14px;
+}
+.logo{
+    display: block;
+    margin: auto;
+    width: 49px;
+    margin-bottom: 40px;
+}
+section h1{
+    font-size: 30px;
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section h4{
+    padding-bottom: 5px;
+   
+    color: #333;
+    font-weight: normal;
+}
+.from_login{
+    width: 332px;
+    margin: auto;
+}
+.from_login p{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+input.btn{
+    width: 100%;
+    height: 42px;
+    background-color: #ff6700;
+    margin-top: 15px;
+    border: 1px solid rgba(186,186,186,.3);
+    *border: 0 none;
+    color: #fff;
+}
+input.btn:hover{
+        background: #ff936a;
+}
+.xieyi{
+    text-align: center;
+    padding-top: 40px;
+    color: #666;
+    font-size: 14px;
+}
+.xieyi a{
+    margin: 0 10px;
+    font-weight: 900;
+}
+.div_input{
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    height: 42px;
+}
+.quhao{
+    float: left;
+    position: relative;
+    height: 42px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    line-height: 42px;
+    padding: 0 10px;
+    cursor:pointer;
+}
+.xiala{
+    margin-left: 10px;
+    display: inline-block;
+    border-style:solid;
+    border-color: #9d9d9d  transparent transparent transparent;
+    border-width:5px 5px 0px 5px;
+    width: 0;
+    height: 0;
+}
+.tel{
+    line-height: 42px;
+}
+.orange{
+    color: #ff6700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    min-width: 1130px;
+    _width:1130px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-family: Helvetica,arial,"MI Lan Pro","Hiragino Sans GB","PingFang SC","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+    color: #9d9d9d;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+footer a{
+    margin: 0 10px;
+    color: #9d9d9d;
+}
+footer a:hover{
+    color: #111;
+}
+html{
+    height: 100%;
+    padding: 0;
+}
+body{
+
+    padding-top: 2.5%;
+    padding-bottom:100px ;
+    min-height: 400px;
+    position: relative;
+   
+    background: #f9f9f9;
+    font-family: Helvetica,arial,"MI Lan Pro","Hiragino Sans GB","PingFang SC","Microsoft YaHei","微軟正黑體","儷黑 Pro",sans-serif;
+}
