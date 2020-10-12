@@ -9,7 +9,6 @@ if (search) {
         }
     }
     if (!isNaN(id)) {
-        console.log(id);
         $.get("http://127.0.0.1:3000/commodity", function (data) {
             $("#top_name").text(data[id]["name"]);//头部名
             $("#shop_name").text(data[id]["name"]);//名字
@@ -40,11 +39,84 @@ if (search) {
                 str += ` <img src="../img/${data[id]["imgsrc"]}/xqimg/${data[id]["xqimg"][index]}" alt="">`;
             }
             $("#xq").html(str);//介绍图片
+
+            //轮播图
+            (function(){
+                let index=0;
+                let  num= $(".lunbo_img img").length;
+                let str="";
+                for (let  i=0; i < num;i ++) {
+                    str+="<li></li>";
+                }
+                $(".lunbo_index").html(str);
+                 function init(){
+                     if (index<0) {
+                       
+                        index=$(".lunbo_img img").length-1;
+                     }
+                     if (index>$(".lunbo_img img").length-1) {
+                        index=0;
+                     }
+                     console.log($(".lunbo_img img"));
+                     $(".lunbo_img img").fadeOut(500);
+                     $(".lunbo_img img").eq(index).finish().fadeIn(500);
+                     $(".lunbo_index li").removeClass("activation_lunbo_index");
+                     $(".lunbo_index li").eq(index).addClass("activation_lunbo_index");
+                 }
+             
+                 for (let  j =0;j<$(".lunbo_index li").length;j++) {
+                     $(".lunbo_index li").eq(j).click(function(){
+                         index=j;
+                         $(".lunbo_img img").fadeOut(500);
+                         $(".lunbo_img img").eq(index).fadeIn(500);
+                         $(".lunbo_index li").removeClass("activation_lunbo_index");
+                         $(".lunbo_index li").eq(index).addClass("activation_lunbo_index");
+                     });
+                 }
+             
+             
+                 function start() {
+                     let lbtime=setInterval(function name() {
+                        index++;
+                         init();
+                     },2000
+                     );
+                     $(".lunbo_img").prop({"lbtime":lbtime});
+                 }
+                 start();
+                 function stop() {
+                     clearInterval( $(".lunbo_img").prop("lbtime"));
+                 }
+                 function next() {
+                     index++;
+                     init();
+                 }
+                 function per(){
+                     index--;
+                     init();
+                 }
+                 $(".lf_btn").click(function() {
+                     per();
+                 });
+                 $(".rg_btn").click(function() {
+                     next();
+                 });
+                 $(".lunbo").mouseover(function () {
+                     stop();
+                 });
+                 $(".lunbo").mouseout(function () {
+                     start();
+                 });
+             
+             
+             })();
+            
+        
         });
     }
 
 } else {
-    location.href="404.html"
+    location.href="404.html";
 }
 
 })();

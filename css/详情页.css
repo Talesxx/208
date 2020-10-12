@@ -120,8 +120,8 @@ a:hover {
     background-position: -42px center;
 }
 
-.activation_lunbo_index {
-    background: #a3a3a3;
+.lunbo_index  .activation_lunbo_index {
+    background: rgba(255, 255, 255, .7);
 }
 
 .lunbo_index li {
@@ -129,7 +129,7 @@ a:hover {
     width: 50px;
     height: 3px;
     margin: 10px;
-    background: #ccc;
+    background: rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
 
