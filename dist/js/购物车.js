@@ -49,9 +49,9 @@
         }
       }
 
-      str += " <div class=\"car_footer clear\" id=\"car_footer\">\n                <a href=\"\u5217\u8868\u9875.html\"><div class=\"fl car-check bgorange\">\u7EE7\u7EED\u8D2D\u7269</div></a>\n                <div class=\"fl car-img\">\u5DF2\u9009\u62E9<span>0</span> \u4EF6\u5546\u54C1</div>\n                <div class=\"fl car-name\">&nbsp;</div>\n                <div class=\"fl car-price\">&nbsp;</div>\n              \n                <div class=\"fl car-total  orange\">\u5408\u8BA1: <span id=\"zjg\">0</span>\u5143</div>\n                <div class=\"fl car-action  bgorange\">\u53BB\u652F\u4ED8</div>\n            </div>";
+      str += " <div class=\"car_footer clear\" id=\"car_footer\">\n                <a href=\"\u5217\u8868\u9875.html\"><div class=\"fl car-check bgorange\">\u7EE7\u7EED\u8D2D\u7269</div></a>\n                <div class=\"fl car-img\">\u5DF2\u9009\u62E9<span id=\"xuanzenum\">0</span> \u4EF6\u5546\u54C1</div>\n                <div class=\"fl car-name\">&nbsp;</div>\n                <div class=\"fl car-price\">&nbsp;</div>\n              \n                <div class=\"fl car-total  orange\">\u5408\u8BA1: <span id=\"zjg\">0</span>\u5143</div>\n                <div class=\"fl car-action  bgorange\">\u53BB\u652F\u4ED8</div>\n            </div>";
       $(".car").html(str);
-      $(".car-action").click(function () {
+      $(".car-action").not($(".car-action").first()).not($(".car-action").last()).click(function () {
         removeShop(car, $(this).parent().data("id"), $(this).parent().data("peizhi"), $(this).parent().data("color"));
         init();
         console.log(car);
@@ -97,6 +97,12 @@
       });
 
       function zongjia() {
+        var zonggeshu = 0;
+        $(".car-check .bgorange").parent().siblings().find("input").each(function () {
+          console.log($(this).text());
+          zonggeshu += Number($(this).val());
+        });
+        $("#xuanzenum").text(zonggeshu);
         var zjg = 0;
         $(".car-check .bgorange").parent().siblings().filter(".car-total-price").each(function () {
           console.log($(this).text());

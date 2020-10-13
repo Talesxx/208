@@ -3,7 +3,6 @@ if (localStorage.getItem("loginStatus") == 1) {
 }
 $("#submit_btn").on(
     "click", function () {
-        console.log(1);
         if (/^[a-zA-Z]{1}[a-z0-9A-Z]*$/.test($("#user").val()) && /^.{6,16}$/.test($("#password").val())) {
             $("#submit_btn").css({
                 "pointerEvents": "none",
@@ -16,6 +15,7 @@ $("#submit_btn").on(
                     "username": username,
                     "password": $("#password").val()
                 }, function (data) {
+                    console.log(data);
                     $("#type_text").text(data.msg);
                     if (data.code == 1) {
                         $("#type_text").text("转跳中...");

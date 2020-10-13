@@ -63,7 +63,7 @@
                 }
                 str += ` <div class="car_footer clear" id="car_footer">
                 <a href="列表页.html"><div class="fl car-check bgorange">继续购物</div></a>
-                <div class="fl car-img">已选择<span>0</span> 件商品</div>
+                <div class="fl car-img">已选择<span id="xuanzenum">0</span> 件商品</div>
                 <div class="fl car-name">&nbsp;</div>
                 <div class="fl car-price">&nbsp;</div>
               
@@ -72,7 +72,7 @@
             </div>`;
                 $(".car").html(str);
 
-                $(".car-action").click(function () {
+                $(".car-action").not($(".car-action").first()).not( $(".car-action").last()).click(function () {
                     removeShop(car, $(this).parent().data("id"), $(this).parent().data("peizhi"), $(this).parent().data("color"));
                     init();
                     console.log(car);
@@ -117,6 +117,12 @@
                 });
 
                 function zongjia() {
+                    var zonggeshu = 0;
+                    $(".car-check .bgorange").parent().siblings().find("input").each(function () {
+                      console.log($(this).text());
+                      zonggeshu += Number($(this).val());
+                    });
+                  $("#xuanzenum").text(zonggeshu);
                     let zjg=0;
                     $(".car-check .bgorange").parent().siblings().filter(".car-total-price").each(function() {
                         console.log($(this).text());
