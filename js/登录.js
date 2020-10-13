@@ -18,26 +18,34 @@ $("#submit_btn").on(
                 }, function (data) {
                     $("#type_text").text(data.msg);
                     if (data.code == 1) {
-                        localStorage.setItem("username", username);//设置用户名
-                        localStorage.setItem("loginStatus", "1");//设置登录状态
                         $("#type_text").text("转跳中...");
                         //获取用户购物车
                         $.get("http://127.0.0.1:3000/userCat", {
                             "username": username
                         }, function (data) {
+                            if(data.length==0){
+                                $("#submit_btn").css({
+                                    "pointerEvents": "initial",
+                                    "cursor": "pointer"
+                                });
+                                $("#type_text").text("找不到用户表,登录失败...");
+                                return ;
+                            }
                             data=data[0];
                             var car;
-                            if (data) {
-                                car = data["car"];
+                            car = data["car"];
+                            if (car) {
+                               
                             } else {
-                                car = JSON.parse(localStorage.getItem("temporaryCar"));
+                                car = JSON.parse(localStorage.getItem("temporaryCar")?localStorage.getItem("temporaryCar"):"{}");
                                 if (!car) {
                                     car = {};
                                 }
                             }
-                            console.log(data);
                             localStorage.setItem("UID",data["id"]);
                             localStorage.setItem("userCar", JSON.stringify(car));
+                            localStorage.setItem("username", username);//设置用户名
+                            localStorage.setItem("loginStatus", "1");//设置登录状态
                             location.href = "小米.html";
                         });
                     } else {

@@ -197,7 +197,7 @@
                 console.log(data);
               });
             } else {
-              var _car = JSON.parse(localStorage.getItem("temporaryCar"));
+              var _car = JSON.parse(localStorage.getItem("temporaryCar") ? localStorage.getItem("temporaryCar") : "{}");
 
               if (!_car) {
                 _car = {};
@@ -219,19 +219,28 @@
 
 function addShop(car, id, peizhi, color) {
   if (car[id] !== undefined) {
-    if (car[id][peizhi] !== undefined) {
-      if (car[id][peizhi][color] !== undefined) {
-        car[id][peizhi][color]++;
-      } else {
-        car[id][peizhi][color] = 1;
+    var cz = true;
+
+    for (var i in car[id]) {
+      if (car[id][i]["color"] == color && car[id][i]["peizhi"] == peizhi) {
+        cz = false;
+        car[id][i]["num"]++;
       }
-    } else {
-      car[id][peizhi] = {};
-      car[id][peizhi][color] = 1;
+    }
+
+    if (cz) {
+      car[id].push({
+        peizhi: peizhi,
+        color: color,
+        num: 1
+      });
     }
   } else {
-    car[id] = {};
-    car[id][peizhi] = {};
-    car[id][peizhi][color] = 1;
+    car[id] = [];
+    car[id].push({
+      peizhi: peizhi,
+      color: color,
+      num: 1
+    });
   }
 }

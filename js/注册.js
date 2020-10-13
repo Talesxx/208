@@ -24,7 +24,7 @@ $("#btn_zhuce").on(
                         localStorage.setItem("username", username);
                         localStorage.setItem("loginStatus", "1");
                         let car;
-                        car = JSON.parse(localStorage.getItem("temporaryCar"));
+                        car = JSON.parse(localStorage.getItem("temporaryCar")?localStorage.getItem("temporaryCar"):"{}");
                         if (!car) {
                             car = {};
                         }

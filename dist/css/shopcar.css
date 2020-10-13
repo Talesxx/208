@@ -147,6 +147,11 @@ body {
 .car-img {
     width: 120px;
 }
+.car-img img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
 
 .car-name {
     width: 380px;
@@ -162,8 +167,34 @@ body {
 .car-num {
     width: 150px;
     text-align: center;
+    position: relative;
+}
+.car-num div{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 150px;
+    color: #424242;
+    border: 1px solid #e0e0e0;
+    height: 50px;
 }
 
+.car-num div input,.car-num div button{
+    width: 50px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+.car-num div button:hover{
+    background: #e0e0e0;
+}
 .car-total {
     width: 120px;
     padding-right: 83px;
@@ -181,15 +212,37 @@ body {
     padding: 15px 25px 15px 0;
     margin-top: 2px;
 }
+.car_itme .car-total:after{
+    content: "元";
+}
+.car_itme .car-price:after{
+    content: "元";
+}
 
 .car_footer {
+    position: sticky;
     line-height: 50px;
     margin-top: 50px;
     background: #fff;
 }
+.car_footer .car-total span{
+    font-size: 25px;
+    font-size: 1;
+}
+.car_footer .car-total{
+    width: 290px;
+}
+.car_footer .car-check{
+    text-align: center;
+}
+.car_footer .car-img{
+    text-align: center;
+}
 .orange{
-    color: #ff6700;
+    color: #ff6700 !important;
 }
 .bgorange{
-    background: #ff6700;
+    background: #ff6700 !important;
+    color: #fff !important;
 }
+
