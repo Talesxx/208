@@ -17,7 +17,6 @@ $("#submit_btn").on(
                     "password": $("#password").val()
                 }, function (data) {
                     $("#type_text").text(data.msg);
-
                     if (data.code == 1) {
                         localStorage.setItem("username", username);//设置用户名
                         localStorage.setItem("loginStatus", "1");//设置登录状态
