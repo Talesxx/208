@@ -22,7 +22,7 @@ section {
 
     border-bottom: 1px solid #e0e0e0;
     li {
-        width: 244px;
+        width: 240px;
         height: 136px;
         padding-top: 24px;
         border-right: 1px solid #e0e0e0;
@@ -35,8 +35,8 @@ section {
             width: 70px;
             height: 70px;
             margin: 0 auto 24px;
+            object-fit: contain;
         }
-
         p {
             display: block;
             max-height: 20px;

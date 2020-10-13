@@ -12,7 +12,7 @@ section {
   border-top: 1px solid #e0e0e0;
   border-bottom: 1px solid #e0e0e0; }
   .phone li {
-    width: 244px;
+    width: 240px;
     height: 136px;
     padding-top: 24px;
     border-right: 1px solid #e0e0e0;
@@ -24,7 +24,8 @@ section {
       display: block;
       width: 70px;
       height: 70px;
-      margin: 0 auto 24px; }
+      margin: 0 auto 24px;
+      object-fit: contain; }
     .phone li p {
       display: block;
       max-height: 20px;

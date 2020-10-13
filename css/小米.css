@@ -433,6 +433,7 @@ header form button {
 }
 
 .body_title {
+    position: relative;
     line-height: 58px;
     font-size: 22px;
     font-weight: 100;
@@ -541,7 +542,8 @@ header form button {
 footer a {
     color: #e0e0e0;
 }
-section{
+
+section {
     width: 1226px;
     margin: auto;
     background: #e0e0e0;
@@ -562,6 +564,110 @@ section .box-hd {
 
 }
 
-.section_wrap{
+.section_wrap {
     background: #e0e0e0;
+}
+
+
+/* 下方轮播 */
+.swiper-button-1:hover,
+.swiper-button-2:hover {
+    color: #ff6700;
+    transition: all 0.5s;
+}
+
+.swiper-button-1 {
+    float: right;
+    display: block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-left: -1px;
+    border: 1px solid #b0b0b0;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.swiper-button-2 {
+    float: right;
+    display: block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-left: -1px;
+    border: 1px solid #b0b0b0;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.section_wrap .row>a>img {
+    float: left;
+    width: 234px;
+    height: 614px;
+    transition: all 0.5s;
+}
+.section_wrap ul a:hover,.section_wrap .row>a>img:hover{
+    z-index: 2;
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+}
+.section_wrap ul a{
+    transition: all 0.5s;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 234px;
+    padding-top: 39px;
+    float: left;
+    text-align: center;
+    padding-bottom: 22px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+.section_wrap ul img {
+    width: 160px;
+    margin: auto;
+}
+
+
+
+.section_wrap p {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.section_wrap h6 {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #212121;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.section_wrap h5 {
+    margin: 0;
+    color: #ff6709;
+    margin-bottom: 9px;
 }

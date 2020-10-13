@@ -6,9 +6,14 @@ body {
     border-top: solid 1px #e0e0e0;
     border-bottom: solid 1px #e0e0e0;
     box-shadow: 0 5px 5px rgba(0, 0, 0, .07);
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 9999;
 }
 
 .container {
+    background: #fff;
     width: 1226px;
     margin-right: auto;
     margin-left: auto;
@@ -70,10 +75,14 @@ a:hover {
 
 .lunbo_img img {
     position: absolute;
-    width: 560px;
     height: 560px;
+    width: 560px;
+    object-fit: contain;
     top: 0;
+    bottom: 0;
     left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .commodity_body {
@@ -120,8 +129,8 @@ a:hover {
     background-position: -42px center;
 }
 
-.activation_lunbo_index {
-    background: #a3a3a3;
+.lunbo_index  .activation_lunbo_index {
+    background: rgba(0, 0, 0, .3);
 }
 
 .lunbo_index li {
@@ -129,7 +138,7 @@ a:hover {
     width: 50px;
     height: 3px;
     margin: 10px;
-    background: #ccc;
+    background: #f9f9fa;
     cursor: pointer;
 }
 

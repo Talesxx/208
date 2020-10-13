@@ -1,45 +1,66 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 /* 取消列表符号 */
-ul,li{
+ul,
+li {
     list-style: none;
 }
+
 /* 取消下划线 */
-a{
+a {
     text-decoration: none;
 }
+
 /* 取消加粗 */
-h1,h2,h3,h4,h5,h6,strong,b{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
     font-weight: normal;
 }
+
 /* 取消倾斜 */
-em,i{
+em,
+i {
     font-style: normal;
 }
+
 /* 解决图片3px */
-img{
+img {
     display: block;
 }
+
 /* 取消按钮边框 */
-input,button{
+input,
+button {
     border: none;
     background: none;
 }
-.clear:after{
+
+.clear:after {
     content: ".";
     display: block;
     clear: both;
     height: 0;
     overflow: hidden;
     visibility: hidden;
-}/* 解决高度塌陷最完美的方法 */
-.clear{
-    zoom:1;
-}/*ie解决兼容问题 */
+}
 
-nav{
+/* 解决高度塌陷最完美的方法 */
+.clear {
+    zoom: 1;
+}
+
+/*ie解决兼容问题 */
+
+nav {
     margin: auto;
     width: 1226px;
     height: 40px;
@@ -48,15 +69,18 @@ nav{
     line-height: 40px;
     font-size: 12px;
     position: relative;
-   
+
 }
-nav a{
+
+nav a {
     color: #b0b0b0;
 }
-nav a:hover{
+
+nav a:hover {
     color: #fff;
 }
-nav .shopcat{
+
+nav .shopcat {
     right: 0;
     top: 0;
     position: absolute;
@@ -65,44 +89,49 @@ nav .shopcat{
     text-align: center;
 
 }
-nav  .right{
+
+nav .right {
     float: right;
-    margin-right:130px;
+    margin-right: 130px;
 }
-nav .shopcat span{
+
+nav .shopcat span {
     float: right;
     background: #666;
     width: 120px;
     right: 0;
 
 }
-.nav_wrap{
-   background: #333333;
+
+.nav_wrap {
+    background: #333333;
 }
 
-.shopcat div{
+.shopcat div {
     position: absolute;
     width: 329px;
     height: 0px;
     background: #fff;
     top: 40px;
-    right:0px;
-    border-top:none;
+    right: 0px;
+    border-top: none;
     z-index: 10000;
     box-shadow: 0px 2px 2px #666;
     transition: all 1s;
 }
-.shopcat:hover div{
+
+.shopcat:hover div {
     height: 99px;
 }
-header{
+
+header {
     width: 1226px;
     height: 100px;
     margin: auto;
     color: #333333;
 }
 
-.log{
+.log {
     width: 55px;
     height: 55px;
     margin-top: 22px;
@@ -111,45 +140,54 @@ header{
     position: relative;
     overflow: hidden;
 }
-header .log .one{
+
+header .log .one {
     position: absolute;
     top: 4px;
     left: -55px;
     transition: all 0.1s;
 }
-header .log .two{
-   position: absolute;
-   top: 4px;
-   left: 1px;
-   transition: all 0.1s;
+
+header .log .two {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    transition: all 0.1s;
 }
-header .log:hover .one{
+
+header .log:hover .one {
     left: 1px;
 }
-header .log:hover .two{
+
+header .log:hover .two {
     left: 55px;
 }
-.log2{
+
+.log2 {
     float: left;
     margin-top: 22px;
     margin-left: 12px;
 }
-header a{
+
+header a {
     display: block;
     float: left;
-    color:#333;
+    color: #333;
     line-height: 1;
     font-size: 16px;
-    padding:38px 10px 38px;
+    padding: 38px 10px 38px;
 }
-header a:hover{
+
+header a:hover {
     color: #ff6801;
 }
-header form{
+
+header form {
     float: right;
     margin-top: 22px;
 }
-.sou{
+
+.sou {
     width: 245px;
     height: 50px;
     background: #fff;
@@ -157,41 +195,136 @@ header form{
     padding: 0 10px;
     outline: none;
 }
-header form button{
+
+header form button {
     float: right;
     width: 50px;
     height: 52px;
     border: #e0e0e0 1px solid;
     outline: none;
 }
-.banner{
+
+.banner {
     width: 1226px;
     height: 460px;
     position: relative;
     margin: auto;
 }
-.banner img{
+
+.banner .lunbo>.lunbo_img img {
     position: absolute;
     top: 0;
     left: 0;
     width: 1226px;
     height: 460px;
 }
-.banner>aside>ul>li>div{
+
+.lf_btn {
     position: absolute;
-    right:-992px;
+    left: 234px;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    height: 69px;
+    margin: auto;
+    background: url(../img/icon-slides.png) no-repeat -84px center;
+}
+
+.lf_btn:hover {
+    background-position: -0px center;
+}
+
+.rg_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    height: 69px;
+    margin: auto;
+    float: left;
+    background: url(../img/icon-slides.png) no-repeat -125px center;
+}
+
+.rg_btn:hover {
+    background-position: -42px center;
+}
+
+.lunbo_index {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    text-align: center;
+}
+
+.lunbo_index .activation_lunbo_index {
+    background: hsla(0, 0%, 100%, .4);
+    border-color: rgba(0, 0, 0, .4);
+}
+
+.lunbo_index li:hover {
+    background: hsla(0, 0%, 100%, .4);
+    border-color: rgba(0, 0, 0, .4);
+}
+
+.lunbo_index li {
+    display: inline-block;
+    margin: 0 4px;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-color: hsla(0, 0%, 100%, .3);
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, .4);
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+.banner>aside>ul>li>div {
+    position: absolute;
+    left: 234px;
     top: 0;
     background: #fff;
     z-index: 100;
     width: 992px;
-    height: 460px;
+    height: 464px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+    display: none;
 }
-.banner .lunbo{
+
+.banner>aside>ul>li:hover>div {
+    display: block;
+}
+
+.xiaoliebiao ul li {
+    line-height: 40px;
+    width: 200px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+.xiaoliebiao ul li img {
+    width: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 12px;
+    vertical-align: middle;
+}
+
+.banner .lunbo {
     width: 1226px;
     height: 460px;
     overflow: hidden;
 }
-.banner aside{
+
+.banner aside {
     position: absolute;
     top: 0;
     left: 0;
@@ -200,43 +333,49 @@ header form button{
     width: 234px;
     border: 0;
     color: #fff;
-    background: rgba(105,101,101,.6);
+    background: rgba(105, 101, 101, .6);
     z-index: 10;
 }
-.banner aside li{
+
+.banner>aside>ul>li {
     background: url(../img/图层2.png) no-repeat 180px center;
     line-height: 42px;
     padding: 0px 0px 0px 30px;
     width: 204px;
 }
-.banner aside li a{
+
+.banner>aside>ul>li>a {
     color: #fff;
 }
-.banner aside li:hover{
+
+.banner>aside>ul>li:hover {
     background-color: #ff6801;
 }
-.mi_item{
+
+.mi_item {
     width: 1226px;
     margin: auto;
     margin-top: 14px;
 }
 
-.mi_item img{
+.mi_item img {
     width: 316px;
     height: 170px;
-    margin-left:14px;
+    margin-left: 14px;
     float: left;
 }
+
 .mi_item div {
     float: left;
-    background: rgba(105,101,101,.6);
+    background: rgba(105, 101, 101, .6);
     font-size: 12px;
     width: 228px;
     line-height: 1;
     text-align: center;
     color: #fff;
 }
-.mi_item div li{
+
+.mi_item div li {
     width: 76px;
     height: 82px;
     float: left;
@@ -244,13 +383,15 @@ header form button{
     background: rgba(56, 37, 37, 0.6);
     transition: all 1s;
 }
-.mi_item div li a{
+
+.mi_item div li a {
     display: block;
     padding-top: 18px;
     color: #e0e0e0;
     transition: all 1s;
 }
-.mi_item div li img{
+
+.mi_item div li img {
     float: none;
     display: block;
     width: 24px;
@@ -258,60 +399,72 @@ header form button{
     margin: auto;
     margin-bottom: 4px;
 }
-.mi_item div li:hover a{
+
+.mi_item div li:hover a {
     color: #fff;
-    
+
 }
-.mi_item div li:hover{
+
+.mi_item div li:hover {
     background: rgba(56, 37, 37, 0.5);
 }
-.body_warp{
+
+.body_warp {
     background-color: #e0e0e0;
 }
-.body{
+
+.body {
     margin: auto;
     margin-top: 38px;
     background-color: #e0e0e0;
     width: 1226px;
-  padding-top: 4px;
-  padding-bottom: 30px;
+    padding-top: 4px;
+    padding-bottom: 30px;
 }
-.body .shangou a{
+
+.body .shangou a {
     width: 234px;
     display: block;
     padding-top: 39px;
-    border-top:1px solid #0f0 ;
+    border-top: 1px solid #0f0;
     float: left;
     text-align: center;
     padding-bottom: 49px;
 }
-.body_title{
+
+.body_title {
+    position: relative;
     line-height: 58px;
     font-size: 22px;
     font-weight: 100;
     color: #333;
 }
-.body .shangou a h3{
+
+.body .shangou a h3 {
     padding-top: 15px;
 
     color: #ef3a3b;
 }
-.body .shangou a h4{
-    color: rgba(0,0,0,.54);
+
+.body .shangou a h4 {
+    color: rgba(0, 0, 0, .54);
     font-size: 15px;
 }
-.body .shangou a img{
+
+.body .shangou a img {
     margin: 25px auto;
     max-width: 160px;
     _width: 160px;
 }
-.body .shangou a dl{
+
+.body .shangou a dl {
     margin: auto;
     margin-top: 30px;
 
     width: max-content;
 }
-.body .shangou a dt{
+
+.body .shangou a dt {
     float: left;
     width: 46px;
     height: 46px;
@@ -320,7 +473,8 @@ header form button{
     font-size: 24px;
     line-height: 46px;
 }
-.body .shangou a dd{
+
+.body .shangou a dd {
     float: left;
     width: 15px;
     height: 46px;
@@ -329,31 +483,39 @@ header form button{
     font-size: 28px;
     font-style: normal;
 }
-.juse{
+
+.juse {
     background: #f1edec;
 }
-.baise{
+
+.baise {
     background: #fff;
 }
-.body ul{
+
+.body ul {
     float: left;
 }
-.body li{
+
+.body li {
     margin-right: 14px;
     float: left;
 }
-.shangou .clear .baise .item{
-    margin:  0px auto;
+
+.shangou .clear .baise .item {
+    margin: 0px auto;
 }
-.shangou h5{
+
+.shangou h5 {
     margin: 0;
     color: #ff6709;
     margin-bottom: 9px;
 }
-.shangou h5 del{
+
+.shangou h5 del {
     color: #666;
 }
-.shangou p{
+
+.shangou p {
     height: 18px;
     margin: 0 20px 12px;
     font-size: 12px;
@@ -362,7 +524,8 @@ header form button{
     overflow: hidden;
     white-space: nowrap;
 }
-.shangou h6{
+
+.shangou h6 {
     margin: 0 20px 3px;
     font-size: 14px;
     font-weight: 400;
@@ -371,9 +534,140 @@ header form button{
     overflow: hidden;
     white-space: nowrap;
 }
-.clear .end{
-    margin-right:0 ;
+
+.clear .end {
+    margin-right: 0;
 }
-footer a{
+
+footer a {
     color: #e0e0e0;
+}
+
+section {
+    width: 1226px;
+    margin: auto;
+    background: #e0e0e0;
+}
+
+section .title {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 58px;
+    color: #333;
+}
+
+section .box-hd {
+    position: relative;
+    height: 58px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+.section_wrap {
+    background: #e0e0e0;
+}
+
+
+/* 下方轮播 */
+.swiper-button-1:hover,
+.swiper-button-2:hover {
+    color: #ff6700;
+    transition: all 0.5s;
+}
+
+.swiper-button-1 {
+    float: right;
+    display: block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-left: -1px;
+    border: 1px solid #b0b0b0;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.swiper-button-2 {
+    float: right;
+    display: block;
+    width: 24px;
+    height: 16px;
+    padding: 3px 5px;
+    margin-left: -1px;
+    border: 1px solid #b0b0b0;
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-transition: color .5s;
+    transition: color .5s;
+    color: #b0b0b0;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.section_wrap .row>a>img {
+    float: left;
+    width: 234px;
+    height: 614px;
+    transition: all 0.5s;
+}
+.section_wrap ul a:hover,.section_wrap .row>a>img:hover{
+    z-index: 2;
+    -webkit-box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    box-shadow: 0 15px 30px rgba(0,0,0,.1);
+    -webkit-transform: translate3d(0,-2px,0);
+    transform: translate3d(0,-2px,0);
+}
+.section_wrap ul a{
+    transition: all 0.5s;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 234px;
+    padding-top: 39px;
+    float: left;
+    text-align: center;
+    padding-bottom: 22px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+}
+
+.section_wrap ul img {
+    width: 160px;
+    margin: auto;
+}
+
+
+
+.section_wrap p {
+    height: 18px;
+    margin: 0 20px 12px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    color: #b0b0b0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.section_wrap h6 {
+    margin: 0 20px 3px;
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    color: #212121;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.section_wrap h5 {
+    margin: 0;
+    color: #ff6709;
+    margin-bottom: 9px;
 }

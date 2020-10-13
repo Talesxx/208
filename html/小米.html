@@ -33,15 +33,15 @@
 					src="../img/mi-logo.png" alt=""> </a></div>
 
 		<img class="log2" src="../img/b06819007feedbea62aedaa3089633d2.gif" alt="">
-		<a href="#">小米手机</a>
+		<a href="列表页.html">商品列表</a>
 		<a href="#">Redmi 红米</a>
 		<a href="#">电视</a>
-		<a href="#">小米手</a>
-		<a href="#">小米</a>
-		<a href="#">小米手</a>
-		<a href="#">小米手机</a>
-		<a href="#">小米</a>
-		<a href="#">小米</a>
+		<a href="#">商品列</a>
+		<a href="#">商品</a>
+		<a href="#">商品</a>
+		<a href="#">商品列表</a>
+		<a href="#">商品</a>
+		<a href="#">商品</a>
 		<form action="" method="get">
 			<input class="sou" type="text" placeholder="嘿嘿黑"><button class="iconfont icon-sousuo"></button>
 		</form>
@@ -142,7 +142,10 @@
 	</div>
 	<div class="body_warp">
 		<div class="body clear">
-			<div class="body_title">小米闪购</div>
+			<div class="body_title">小米闪购
+				<div class="swiper-button-2">></div>
+				<div class="swiper-button-1">&lt;</div>
+			</div>
 			<div class="shangou">
 				<ul>
 					<li class="clear">
@@ -161,64 +164,210 @@
 						</a>
 					</li>
 				</ul>
-				<ul>
-					<li class="clear">
-						<a class="baise" href="#">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
-							<h6>变频 | 米家互联网空调 1.5匹</h6>
-							<p>变频，快速制冷热</p>
-							<h5> <span>1</span>元 <del>2299元</del></h5>
-						</a>
-					</li>
-					<li class="clear">
-						<a class="baise" href="#">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
-							<h6>变频 | 米家互联网空调 1.5匹</h6>
-							<p>变频，快速制冷热</p>
-							<h5> <span>1</span>元 <del>2299元</del></h5>
-						</a>
-					</li>
-					<li class="clear">
-						<a class="baise" href="#">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
-							<h6>变频 | 米家互联网空调 1.5匹</h6>
-							<p>变频，快速制冷热</p>
-							<h5> <span>1</span>元 <del>2299元</del></h5>
-						</a>
-					</li>
-					<li class="clear end">
-						<a class="baise" href="#">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
-							<h6>变频 | 米家互联网空调 1.5匹</h6>
-							<p>变频，快速制冷热</p>
-							<h5> <span>1</span>元 <del>2299元</del></h5>
-						</a>
-					</li>
+
+
+				<!-- <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide swiper-slide-active" style="width: 492px; margin-right: 30px;">Slide 1</div>
+					  <div class="swiper-slide swiper-slide-next" style="width: 492px; margin-right: 30px;">Slide 2</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 3</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 4</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 5</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 6</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 7</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 8</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 9</div>
+					  <div class="swiper-slide" style="width: 492px; margin-right: 30px;">Slide 10</div>
+					</div>
+					,<!-- Add Pagination -->
+				<!-- <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 7"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 8"></span></div>
+				  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div> -->
+				<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+				<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
+				<div class="swiper-container swiper-container-initialized swiper-container-horizontal"
+					style="width: 978px; height: 327px; overflow: hidden; float: left;">
+					<ul class="swiper-wrapper" style="width: 99999px;">
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<li class="clear end swiper-slide">
+							<a class="baise" href="#">
+								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+								<h6>变频 | 米家互联网空调 1.5匹</h6>
+								<p>变频，快速制冷热</p>
+								<h5> <span>1</span>元 <del>2299元</del></h5>
+							</a>
+						</li>
+						<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
+				</div>
 				</ul>
 			</div>
+			<script>
+				var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 4,
+					spaceBetween: 10,
+					loop: true,// 循环
+					navigation: {
+						nextEl: '.swiper-button-2',
+						prevEl: '.swiper-button-1',
+					},
+					pagination: {
+					},
+				});
+				let i = null;
 
+				function swiperstart() {
+					i = setInterval(
+						function () {
+							$(".swiper-button-2").trigger("click");
+						},
+						2000);
+				}
+				swiperstart();
+				function swiperend() {
+					clearInterval(i);
+				}
+				$(".swiper-container").hover(function () {
+					swiperend();
+				}, function () {
+					swiperstart();
+				});
+
+			</script>
 		</div>
+
+	</div>
 	</div>
 	<div class="section_wrap">
-		<section>
+		<section class="clear">
 			<div class="box-hd">
 				<h2 class="title">手机</h2>
 			</div>
 			<div class="row">
-				<a href=""> <img alt=""
+				<a href="详情页.html?id=3"> <img alt=""
 						src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/574c6643ab91c6618bfb2d0e2c761d0b.jpg?thumb=1&amp;w=293&amp;h=768&amp;f=webp&amp;q=90"
 						lazy="loaded">
-					</a>
-				<ul>
-					<li>
-						<a href="">
-							<img src="" alt="">
-							<h3></h3>
-							<p class=""></p>
-							<p class=""></p>
-						</a>
-					</li>
+				</a>
+				<ul class="">
 
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
+					<a class="baise" href="#">
+						<li class="item">
+							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+							<h6>变频 | 米家互联网空调 1.5匹</h6>
+							<p>变频，快速制冷热</p>
+							<h5> <span>1</span>元 </h5>
+						</li>
+					</a>
 				</ul>
 
 			</div>
@@ -393,7 +542,8 @@
 
 		}, 50);
 	</script>
-	<script>
+<!--banner 的轮播图-->
+	<script>	
 		(function () {
 			let index = 0;
 			let num = $(".lunbo_img img").length;
@@ -411,7 +561,7 @@
 					index = 0;
 				}
 				console.log($(".lunbo_img img"));
-				$(".lunbo_img img").fadeOut(500);
+				$(".lunbo_img img").finish().fadeOut(500);
 				$(".lunbo_img img").eq(index).finish().fadeIn(500);
 				$(".lunbo_index li").removeClass("activation_lunbo_index");
 				$(".lunbo_index li").eq(index).addClass("activation_lunbo_index");
@@ -420,26 +570,28 @@
 			for (let j = 0; j < $(".lunbo_index li").length; j++) {
 				$(".lunbo_index li").eq(j).click(function () {
 					index = j;
-					$(".lunbo_img img").fadeOut(500);
+					$(".lunbo_img img").finish().fadeOut(500);
 					$(".lunbo_img img").eq(index).fadeIn(500);
 					$(".lunbo_index li").removeClass("activation_lunbo_index");
 					$(".lunbo_index li").eq(index).addClass("activation_lunbo_index");
 				});
 			}
 
-
+			let lbtime;
+			
+			function stop() {
+				clearInterval($(".lunbo_img").prop("lbtime"));
+			}
 			function start() {
-				let lbtime = setInterval(function name() {
+				stop();
+				lbtime = setInterval(function name() {
 					index++;
 					init();
-				}, 2000
+				}, 3000
 				);
 				$(".lunbo_img").prop({ "lbtime": lbtime });
 			}
 			start();
-			function stop() {
-				clearInterval($(".lunbo_img").prop("lbtime"));
-			}
 			function next() {
 				index++;
 				init();

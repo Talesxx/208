@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-cn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -30,22 +30,25 @@
         </nav>
     </div>
     <header>
-        <div class="log" src="../img/log.png" alt=""><img class="one" src="../img/mi-home.png" alt=""> <img class="two"
-                src="../img/mi-logo.png" alt=""></div>
-        <img class="log2" src="../img/b06819007feedbea62aedaa3089633d2.gif" alt="">
-        <a href="#">小米手机</a>
-        <a href="#">Redmi 红米</a>
-        <a href="#">电视</a>
-        <a href="#">小米手</a>
-        <a href="#">小米</a>
-        <a href="#">小米手</a>
-        <a href="#">小米手机</a>
-        <a href="#">小米</a>
-        <a href="#">小米</a>
-        <form action="" method="get">
-            <input class="sou" type="text" placeholder="嘿嘿黑"><button class="iconfont icon-sousuo"></button>
-        </form>
-    </header>
+
+		<div class="log" src="../img/log.png" alt="">
+			<a href="小米.html"><img class="one" src="../img/mi-home.png" alt=""> <img class="two"
+					src="../img/mi-logo.png" alt=""> </a></div>
+
+		<img class="log2" src="../img/b06819007feedbea62aedaa3089633d2.gif" alt="">
+		<a href="列表页.html">商品列表</a>
+		<a href="#">Redmi 红米</a>
+		<a href="#">电视</a>
+		<a href="#">商品列</a>
+		<a href="#">商品</a>
+		<a href="#">商品</a>
+		<a href="#">商品列表</a>
+		<a href="#">商品</a>
+		<a href="#">商品</a>
+		<form action="" method="get">
+			<input class="sou" type="text" placeholder="嘿嘿黑"><button class="iconfont icon-sousuo"></button>
+		</form>
+	</header>
     <div class="container_wrap">
         <div class="container clear">
             <h2 class="left" id="top_name">加载中</h2>
@@ -99,7 +102,7 @@
                 <div class="total-price">加载中</div>
             </div>
             <div class="btn-box">
-                <div class="sale-btn"><a class="btn btn-primary">加入购物车</a></div>
+                <div class="sale-btn"><a class="btn btn-primary" id="addcar">加入购物车</a></div>
             </div>
             <div class="after-sale-info">
                 <span>
