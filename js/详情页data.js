@@ -164,7 +164,7 @@
                                     //成功的回调函数，返回的是增加的数据
                                     console.log(data);
                                 });
-
+                                location.href="成功添加商品.html";
                             } else {
                                 let car = JSON.parse(localStorage.getItem("temporaryCar")?localStorage.getItem("temporaryCar"):"{}");
                                 if (!car) {
@@ -172,6 +172,7 @@
                                 }
                                 addShop(car, id, peizhi, color);
                                 localStorage.setItem("temporaryCar", JSON.stringify(car));
+                                location.href="成功添加商品.html";
                             }
                         }
                     );
