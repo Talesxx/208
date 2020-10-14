@@ -51,7 +51,7 @@
                         str += `
                     <div class="car_itme clear" data-id="${id}" data-color="${color}" data-peizhi="${peizhi}">
                     <div class="fl car-check"><i class="iconfont" data-switch="0">&#xe7fa;</i>&nbsp;</div>
-                    <div class="fl car-img"><img src="../img/${odata[id]["imgsrc"]}/img/${odata[id]["img"][0]}" alt=""></div>
+                    <a href="详情页.html?id=${id}"><div class="fl car-img"><img src="../img/${odata[id]["imgsrc"]}/img/${odata[id]["img"][0]}" alt=""></div></a>
                     <div class="fl car-name">${odata[id]["name"] + "  " + odata[id]["color"][color] + "  " + odata[id]["Configuration"][peizhi]}</div>
                     <div class="fl car-price">${odata[id]["price"][peizhi]}</div>
                     <div class="fl car-num">&nbsp;<div><button>-</button><input type="number" value="${num}"><button>+</button></div>
@@ -74,9 +74,17 @@
 
                 $(".car-action").not($(".car-action").first()).not( $(".car-action").last()).click(function () {
                     removeShop(car, $(this).parent().data("id"), $(this).parent().data("peizhi"), $(this).parent().data("color"));
-                    init();
-                    console.log(car);
                     save(car);
+                    $(this).parent().remove();
+
+                    //多选框
+                    if ($(".car-check i").not($(".car-check i")[0]).not(".bgorange").length==0) {
+                        $(".car-check i").addClass("bgorange");
+                    }else{
+                        $(".car-check i").eq(0).removeClass("bgorange");
+                    }
+                    //总价计算
+                    zongjia();
                 });
                 $(".car-num input").on("input", function () {
                     $(this).val(parseInt($(this).val()));
@@ -119,16 +127,16 @@
                 function zongjia() {
                     var zonggeshu = 0;
                     $(".car-check .bgorange").parent().siblings().find("input").each(function () {
-                      console.log($(this).text());
+                     // console.log($(this).text());
                       zonggeshu += Number($(this).val());
                     });
                   $("#xuanzenum").text(zonggeshu);
                     let zjg=0;
                     $(".car-check .bgorange").parent().siblings().filter(".car-total-price").each(function() {
-                        console.log($(this).text());
+                      //  console.log($(this).text());
                       zjg+= Number($(this).text());
                     });
-                    console.log(zjg);
+                   // console.log(zjg);
                     $("#zjg").text(zjg);
                 }
 
@@ -161,7 +169,7 @@ function save(car){
             }
         }).then((data) => {
             //成功的回调函数，返回的是增加的数据
-            console.log(data);
+         //   console.log(data);
         });
 
     } else {

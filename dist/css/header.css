@@ -1,5 +1,4 @@
-
-nav{
+nav {
     margin: auto;
     width: 1226px;
     height: 40px;
@@ -8,15 +7,18 @@ nav{
     line-height: 40px;
     font-size: 12px;
     position: relative;
-   
+
 }
-nav a{
+
+nav a {
     color: #b0b0b0;
 }
-nav a:hover{
+
+nav a:hover {
     color: #fff;
 }
-nav .shopcat{
+
+nav .shopcat {
     right: 0;
     top: 0;
     position: absolute;
@@ -25,46 +27,45 @@ nav .shopcat{
     text-align: center;
 
 }
-nav  .right{
+
+nav .right {
     float: right;
-    margin-right:130px;
+    margin-right: 130px;
 }
-nav .shopcat span{
+
+nav .shopcat span {
     float: right;
     background: #666;
     width: 120px;
     right: 0;
 
 }
-.nav_wrap{
-   background: #333333;
+
+.nav_wrap {
+    background: #333333;
 }
 
-.shopcat div{
+.shopcat div {
     position: absolute;
     width: 329px;
-    height: 0px;
+    display: none;
     background: #fff;
     top: 40px;
-    right:0px;
-    border-top:none;
+    right: 0px;
+    border-top: none;
     z-index: 10000;
     box-shadow: 0px 2px 2px #666;
-    transition: all 1s;
     overflow: hidden;
 }
-.shopcat:hover div{
-    overflow: hidden;
-    height: auto;
-}
-header{
+
+header {
     width: 1226px;
     height: 100px;
     margin: auto;
     color: #333333;
 }
 
-.log{
+.log {
     width: 55px;
     height: 55px;
     margin-top: 22px;
@@ -73,45 +74,54 @@ header{
     position: relative;
     overflow: hidden;
 }
-header .log .one{
+
+header .log .one {
     position: absolute;
     top: 4px;
     left: -55px;
     transition: all 0.1s;
 }
-header .log .two{
-   position: absolute;
-   top: 4px;
-   left: 1px;
-   transition: all 0.1s;
+
+header .log .two {
+    position: absolute;
+    top: 4px;
+    left: 1px;
+    transition: all 0.1s;
 }
-header .log:hover .one{
+
+header .log:hover .one {
     left: 1px;
 }
-header .log:hover .two{
+
+header .log:hover .two {
     left: 55px;
 }
-.log2{
+
+.log2 {
     float: left;
     margin-top: 22px;
     margin-left: 12px;
 }
-header a{
+
+header a {
     display: block;
     float: left;
-    color:#333;
+    color: #333;
     line-height: 1;
     font-size: 16px;
-    padding:38px 10px 38px;
+    padding: 38px 10px 38px;
 }
-header a:hover{
+
+header a:hover {
     color: #ff6801;
 }
-header form{
+
+header form {
     float: right;
     margin-top: 22px;
 }
-.sou{
+
+.sou {
     width: 245px;
     height: 50px;
     background: #fff;
@@ -119,10 +129,30 @@ header form{
     padding: 0 10px;
     outline: none;
 }
-header form button{
+
+header form button {
     float: right;
     width: 50px;
     height: 52px;
     border: #e0e0e0 1px solid;
     outline: none;
+}
+
+#min_car img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+#min_car ul li p {
+    float: left;
+    line-height: 60px;
+    font-size: 12px;
+    width: 170px;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }

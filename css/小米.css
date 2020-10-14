@@ -110,20 +110,17 @@ nav .shopcat span {
 .shopcat div {
     position: absolute;
     width: 329px;
-    height: 0px;
+    display: none;
     background: #fff;
     top: 40px;
     right: 0px;
     border-top: none;
     z-index: 10000;
     box-shadow: 0px 2px 2px #666;
-    transition: all 1s;
     overflow: hidden;
 }
 
-.shopcat:hover div {
-    height: auto;
-}
+
 
 header {
     width: 1226px;
@@ -186,6 +183,26 @@ header a:hover {
 header form {
     float: right;
     margin-top: 22px;
+}
+
+
+#min_car  img {
+    float: left;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+#min_car ul li p {
+    float: left;
+    line-height: 60px;
+    font-size: 12px;
+    width: 170px;
+    padding: 20px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
 }
 
 .sou {
