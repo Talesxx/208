@@ -659,7 +659,9 @@ section .box-hd {
 
 .section_wrap ul img {
     width: 160px;
+    height: 160px;
     margin: auto;
+    object-fit: contain;
 }
 
 
@@ -688,4 +690,10 @@ section .box-hd {
     margin: 0;
     color: #ff6709;
     margin-bottom: 9px;
+}
+.baise img{
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin: auto;
 }

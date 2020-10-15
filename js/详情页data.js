@@ -73,13 +73,13 @@
                             $(".lunbo_index li").eq(index).addClass("activation_lunbo_index");
                         });
                     }
-
+                    $(".lunbo_index li").eq(0).trigger("click");//初始化到第一张
 
                     function start() {
                         let lbtime = setInterval(function name() {
                             index++;
                             init();
-                        }, 2000
+                        }, 3000
                         );
                         $(".lunbo_img").prop({ "lbtime": lbtime });
                     }

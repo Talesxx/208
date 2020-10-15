@@ -45,7 +45,6 @@
       init();
     });
   }, function () {
-    console.log(999);
     $("#min_car").finish().slideUp();
   });
 })();

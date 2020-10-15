@@ -72,7 +72,7 @@
           $(this).val(1);
         }
 
-        numShop(car, $(this).parent().parent().parent().data("id"), $(this).parent().parent().parent().data("peizhi"), $(this).parent().parent().data("color"), $(this).val());
+        numShop(car, $(this).parent().parent().parent().data("id"), $(this).parent().parent().parent().data("peizhi"), $(this).parent().parent().parent().data("color"), $(this).val());
         $(this).parent().parent().parent().find(".car-total").text($(this).val() * $(this).parent().parent().parent().find(".car-price").text());
         zongjia();
         save(car);
@@ -145,9 +145,11 @@ function save(car) {
 }
 
 function numShop(car, id, peizhi, color, num) {
+  console.log(num);
+
   for (var i in car[id]) {
     if (car[id][i]["color"] == color && car[id][i]["peizhi"] == peizhi) {
-      car[id][i]["num"] = num;
+      car[id][i]["num"] = +num;
     }
   }
 }

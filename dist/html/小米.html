@@ -21,9 +21,13 @@
 					href="#">消息通知</a>
 			</div>
 			<div class="shopcat"><a href="购物车.html"><span class="iconfont icon-gouwulan">购物车</span></a>
-				<div id="min_car"><ul>
-					<li><img src="" alt=""><p>加载中..</p></li>
-				</ul></div>
+				<div id="min_car">
+					<ul>
+						<li><img src="" alt="">
+							<p>加载中..</p>
+						</li>
+					</ul>
+				</div>
 			</div>
 
 		</nav>
@@ -36,14 +40,14 @@
 
 		<img class="log2" src="../img/b06819007feedbea62aedaa3089633d2.gif" alt="">
 		<a href="列表页.html">商品列表</a>
-		<a href="#">Redmi 红米</a>
-		<a href="#">电视</a>
-		<a href="#">商品列</a>
-		<a href="#">商品</a>
-		<a href="#">商品</a>
-		<a href="#">商品列表</a>
-		<a href="#">商品</a>
-		<a href="#">商品</a>
+		<a href="列表页.html">Redmi 红米</a>
+		<a href="列表页.html">电视</a>
+		<a href="列表页.html">商品列</a>
+		<a href="列表页.html">商品</a>
+		<a href="列表页.html">商品</a>
+		<a href="列表页.html">商品列表</a>
+		<a href="列表页.html">商品</a>
+		<a href="列表页.html">商品</a>
 		<form action="" method="get">
 			<input class="sou" type="text" placeholder="嘿嘿黑"><button class="iconfont icon-sousuo"></button>
 		</form>
@@ -54,30 +58,30 @@
 				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a>
 					<div class="xiaoliebiao">
 						<ul>
-							<a href="#">
+							<a href="列表页.html">
 								<li>
 									<img src="../img/iPhone/xqimg/0-1.png" alt="">
-									<span>哈哈哈哈</span>
+									<span>列表页</span>
 								</li>
 							</a>
-							<a href="#">
+							<a href="列表页.html">
 								<li>
 									<img src="../img/iPhone/xqimg/0-1.png" alt="">
-									<span>哈哈哈哈</span>
+									<span>列表页</span>
 								</li>
 							</a>
 						</ul>
 					</div>
 				</li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
-				<li><a href="详情页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
+				<li><a href="列表页.html">手机&nbsp;&nbsp;笔记本</a></li>
 			</ul>
 		</aside>
 		<div class="lunbo">
@@ -188,7 +192,7 @@
 				<script src="https://unpkg.com/swiper/swiper-bundle.min.js"> </script>
 				<div class="swiper-container swiper-container-initialized swiper-container-horizontal"
 					style="width: 978px; height: 327px; overflow: hidden; float: left;">
-					<ul class="swiper-wrapper" style="width: 99999px;">
+					<ul class="swiper-wrapper" id="swiper-lubbo">
 						<li class="clear end swiper-slide">
 							<a class="baise" href="#">
 								<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
@@ -258,38 +262,7 @@
 				</div>
 				</ul>
 			</div>
-			<script>
-				var swiper = new Swiper('.swiper-container', {
-					slidesPerView: 4,
-					spaceBetween: 10,
-					loop: true,// 循环
-					navigation: {
-						nextEl: '.swiper-button-2',
-						prevEl: '.swiper-button-1',
-					},
-					pagination: {
-					},
-				});
-				let i = null;
-
-				function swiperstart() {
-					i = setInterval(
-						function () {
-							$(".swiper-button-2").trigger("click");
-						},
-						2000);
-				}
-				swiperstart();
-				function swiperend() {
-					clearInterval(i);
-				}
-				$(".swiper-container").hover(function () {
-					swiperend();
-				}, function () {
-					swiperstart();
-				});
-
-			</script>
+		
 		</div>
 
 	</div>
@@ -304,67 +277,66 @@
 						src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/574c6643ab91c6618bfb2d0e2c761d0b.jpg?thumb=1&amp;w=293&amp;h=768&amp;f=webp&amp;q=90"
 						lazy="loaded">
 				</a>
-				<ul class="">
-
+				<ul class="" id="buttom_data">
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
 						</li>
 					</a>
 					<a class="baise" href="#">
-						<li class="item">
-							<img class="item" src="../img/pms_1587552971.69257554.jpg" alt="">
+						<li >
+							<img  src="../img/pms_1587552971.69257554.jpg" alt="">
 							<h6>变频 | 米家互联网空调 1.5匹</h6>
 							<p>变频，快速制冷热</p>
 							<h5> <span>1</span>元 </h5>
@@ -543,8 +515,8 @@
 
 		}, 50);
 	</script>
-<!--banner 的轮播图-->
-	<script>	
+	<!--banner 的轮播图-->
+	<script>
 		(function () {
 			let index = 0;
 			let num = $(".lunbo_img img").length;
@@ -576,9 +548,9 @@
 					$(".lunbo_index li").eq(index).addClass("activation_lunbo_index");
 				});
 			}
-
+			$(".lunbo_index li").eq(0).trigger("click");//初始化到第一张
 			let lbtime;
-			
+
 			function stop() {
 				clearInterval($(".lunbo_img").prop("lbtime"));
 			}
@@ -620,6 +592,71 @@
 
 	</script>
 	<script src="../js/shopcar.js"></script>
+	<script>
+		;
+
+
+		$.get("http://localhost:3000/commodity").then((data) => {
+			let str = "";
+			let str2="";
+			for (let index=0; index<(data.length>8?8:data.length);index++) {
+
+				str += `  <a class="baise" href="../html/详情页.html?id=${data[index]["id"]}">
+					<li class="item">
+							<img src="../img/${data[index]["imgsrc"]}/img/${data[index]["img"][0]}" alt="">
+							<h6>${data[index]["name"]}</h6>
+							<p>${data[index]["shop"]}</p>
+							<h5> <span>${data[index]["price"][0] }</span>元 </h5>
+						</li>
+				</a>`;
+				str2+=`	<li class="clear end swiper-slide">
+					<a class="baise" href="../html/详情页.html?id=${data[index]["id"]}">
+						<img src="../img/${data[index]["imgsrc"]}/img/${data[index]["img"][0]}" alt="" >
+								<h6>${data[index]["name"]}</h6>
+								<p>${data[index]["shop"]}</p>
+								<h5> <span>${data[index]["price"][0] }</span>元</h5>
+							</a>
+						</li>`;
+			}
+			$("#buttom_data").html(str);
+
+			$("#swiper-lubbo").html(str2);
+
+
+			var swiper = new Swiper('.swiper-container', {
+					slidesPerView: 4,
+					spaceBetween: 10,
+					loop: true,// 循环
+					navigation: {
+						nextEl: '.swiper-button-2',
+						prevEl: '.swiper-button-1',
+					},
+					pagination: {
+					},
+				});
+				let i = null;
+
+				function swiperstart() {
+					i = setInterval(
+						function () {
+							$(".swiper-button-2").trigger("click");
+						},
+						2000);
+				}
+				swiperstart();
+				function swiperend() {
+					clearInterval(i);
+				}
+				$(".swiper-container").hover(function () {
+					swiperend();
+				}, function () {
+					swiperstart();
+				});
+		});
+
+
+
+	</script>
 </body>
 
 </html>
